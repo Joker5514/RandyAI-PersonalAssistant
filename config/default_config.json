@@ -1,0 +1,98 @@
+{
+  "system": {
+    "name": "RandyAI Personal Assistant",
+    "version": "1.0.0",
+    "owner": {
+      "name": "Randy Jordan",
+      "location": "Mobile, Alabama",
+      "zip_code": "36605",
+      "vehicle": "2020 Toyota Corolla LE",
+      "work": ["Uber", "Lyft", "Spark"],
+      "interests": [
+        "AI Development",
+        "Car Modifications", 
+        "Tech Gadgets",
+        "Gaming",
+        "Self-Defense"
+      ]
+    }
+  },
+  "preferences": {
+    "tone": "snarky_sardonic_expert",
+    "code_limit": 4000,
+    "daily_update_time": "09:00",
+    "learning_enabled": true,
+    "autonomous_mode": true,
+    "question_generation": true
+  },
+  "integrations": {
+    "perplexity": {
+      "endpoint": "https://api.perplexity.ai/chat/completions",
+      "model": "llama-3.1-sonar-large-128k-online",
+      "max_tokens": 2000,
+      "temperature": 0.7
+    },
+    "abacus": {
+      "endpoint": "https://routellm.abacus.ai/v1/chat/completions",
+      "model": "deepseek-r1",
+      "stream": false
+    },
+    "deepagent": {
+      "endpoint": "https://api.deepagent.ai/v1/completions",
+      "handoff_format": "json"
+    },
+    "github": {
+      "api_url": "https://api.github.com",
+      "username": "Joker5514"
+    }
+  },
+  "scheduling": {
+    "daily_update": "09:00",
+    "github_check_hours": 6,
+    "learning_analysis_hours": 3,
+    "self_improvement_hours": 12,
+    "memory_cleanup": "sunday_02:00",
+    "question_generation_hours": 6
+  },
+  "memory": {
+    "categories": [
+      "general",
+      "credentials",
+      "reports",
+      "errors",
+      "handoffs",
+      "spaces",
+      "analysis",
+      "self_improvement",
+      "maintenance",
+      "user_input"
+    ],
+    "cleanup_days": 90,
+    "important_categories": [
+      "credentials",
+      "self_improvement",
+      "user_input"
+    ]
+  },
+  "tasks": {
+    "priority_levels": {
+      "1-3": "low",
+      "4-6": "medium",
+      "7-8": "high",
+      "9-10": "urgent"
+    },
+    "auto_create_categories": [
+      "ai_development",
+      "github_activity",
+      "learning_improvement",
+      "system_maintenance"
+    ]
+  },
+  "learning": {
+    "success_threshold": 0.7,
+    "improvement_threshold": 0.8,
+    "analysis_window_days": 7,
+    "pattern_recognition": true,
+    "adaptive_responses": true
+  }
+}
